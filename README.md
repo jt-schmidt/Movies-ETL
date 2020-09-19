@@ -2,7 +2,7 @@
 
 # Overview
 Module 8 exploration of ETL using Python/Pandas to extract/transform data from .csv and .json and load to SQL DB.
-
+Also includes introduction to RegEx
 
 # Raw Data
 It is poor Git repository practice to upload raw datasets.  Instead of uploading raw datasets used for this module, here are the links to obtain:
@@ -35,6 +35,8 @@ It is poor Git repository practice to upload raw datasets.  Instead of uploading
 # Deliverable 3: Extract and Transform the Kaggle Data
 
 [ETL_3clean_kaggle_data](/ETL_3clean_kaggle_data.ipynb)
+
+[ETL_3clean_kaggle_data](/ETL_3clean_kaggle_data.ipynb)
 - The extraction and transformation of the Kaggle metadata using the ETL function does the following:
   - The Kaggle metadata is cleaned. (4 pt)
   - The Wikipedia and Kaggle DataFrames are merged. (3 pt)
@@ -55,3 +57,9 @@ It is poor Git repository practice to upload raw datasets.  Instead of uploading
 - The data from the movies_df DataFrame replaces the current data in the movies table in the SQL database, as determined by the movies_query.png. (5 pt)
 - The data from the MovieLens rating CSV file is added to the ratings table in the SQL database, as determined by the ratings_query.png. (5 pt)
 - The elapsed time to add the data to the database is displayed in the ETL_create_database.ipynb file. (5 pt)
+
+*movies_query.PNG*
+![movies_query](/movies_query.PNG)
+
+*ratings_query.PNG*
+![ratings_query](/ratings_query.PNG)
