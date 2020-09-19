@@ -1,5 +1,7 @@
 # Movies-ETL
-Module 8 exploration of ETL using Python/Pandas to extract/transform data from .csv &amp; .json and load to SQL DB.
+
+# Overview
+Module 8 exploration of ETL using Python/Pandas to extract/transform data from .csv and .json and load to SQL DB.
 
 
 # Raw Data
@@ -38,15 +40,18 @@ It is poor Git repository practice to upload raw datasets.  Instead of uploading
   - The Wikipedia and Kaggle DataFrames are merged. (3 pt)
   - The following is performed on the merged Wikipedia and Kaggle DataFrames to create the movies_df: (8 pt)
     - Unnecessary columns are dropped.
-A function is used to fill in the missing Kaggle data.
-The movies_df DataFrame is filtered to keep specific columns.
-The movies_df DataFrame columns are renamed.
-The extraction and transformation of the MovieLens ratings data using the ETL function does the following:
-The ratings counts are cleaned. (3 pt)
-The movies_df DataFrame is merged with the cleaned ratings DataFrame to create the movies_with_ratings_df DataFrame. (4 pt)
-The empty values in the movies_with_ratings_df DataFrame are filled with “0”. (3 pt)
-The movies_with_ratings_df and the movies_df DataFrames are displayed in the ETL_clean_kaggle_data.ipynb file. (5 pt)
+    - A function is used to fill in the missing Kaggle data.
+    - The movies_df DataFrame is filtered to keep specific columns.
+    - The movies_df DataFrame columns are renamed.
+- The extraction and transformation of the MovieLens ratings data using the ETL function does the following:
+  - The ratings counts are cleaned. (3 pt)
+  - The movies_df DataFrame is merged with the cleaned ratings DataFrame to create the movies_with_ratings_df DataFrame. (4 pt)
+  - The empty values in the movies_with_ratings_df DataFrame are filled with “0”. (3 pt)
+- The movies_with_ratings_df and the movies_df DataFrames are displayed in the ETL_clean_kaggle_data.ipynb file. (5 pt)
 
 # Deliverable 4: Create the Movie Database
 
 [ETL_4create_database](/ETL_4create_database.ipynb)
+- The data from the movies_df DataFrame replaces the current data in the movies table in the SQL database, as determined by the movies_query.png. (5 pt)
+- The data from the MovieLens rating CSV file is added to the ratings table in the SQL database, as determined by the ratings_query.png. (5 pt)
+- The elapsed time to add the data to the database is displayed in the ETL_create_database.ipynb file. (5 pt)
