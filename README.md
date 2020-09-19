@@ -1,17 +1,17 @@
 # Movies-ETL
 
-# Overview
+## Overview
 Module 8 exploration of ETL using Python/Pandas to extract/transform data from .csv and .json and load to SQL DB.
 Also includes introduction to RegEx
 
-# Raw Data
+## Raw Data
 It is poor Git repository practice to upload raw datasets.  Instead of uploading raw datasets used for this module, here are the links to obtain:
 - Download link for zipped Kaggle dataset:  
   - https://www.kaggle.com/rounakbanik/the-movies-dataset/download
 - Download link for wikipedia movies .json dataset:  
   - https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-online/module_8/wikipedia-movies.json
   
-# Deliverable 1:  Write an ETL function to read three data files
+## Deliverable 1:  Write an ETL function to read three data files
 
 [ETL_1function_test](/ETL_1function_test.ipynb)
 - An ETL function is written to read in the three data files. (10 pt)
@@ -19,7 +19,7 @@ It is poor Git repository practice to upload raw datasets.  Instead of uploading
 - The function converts the Kaggle metadata file to a Pandas DataFrame, and the DataFrame is displayed in the ETL_function_test.ipynb file. (5 pt)
 - The function converts the MovieLens ratings data file to a Pandas DataFrame, and the DataFrame is displayed in the ETL_function_test.ipynb file. (5 pt)
 
-# Deliverable 2: Extract and Transform the Wikipedia Data
+## Deliverable 2: Extract and Transform the Wikipedia Data
 
 [ETL_2clean_wiki_movies](/ETL_2clean_wiki_movies.ipynb)
 - The TV shows are filtered out, and the wiki_movies_df DataFrame is created. (3 pt)
@@ -32,9 +32,7 @@ It is poor Git repository practice to upload raw datasets.  Instead of uploading
   - The following columns are cleaned in the Wikipedia DataFrame: box office, budget, release date, running time (8 pt)
 - The cleaned Wikipedia data is converted to a Pandas DataFrame, and the DataFrame is displayed in the ETL_clean_wiki_movies.ipynb file. (4 pt)
 
-# Deliverable 3: Extract and Transform the Kaggle Data
-
-[ETL_3clean_kaggle_data](/ETL_3clean_kaggle_data.ipynb)
+## Deliverable 3: Extract and Transform the Kaggle Data
 
 [ETL_3clean_kaggle_data](/ETL_3clean_kaggle_data.ipynb)
 - The extraction and transformation of the Kaggle metadata using the ETL function does the following:
@@ -59,7 +57,9 @@ It is poor Git repository practice to upload raw datasets.  Instead of uploading
 - The elapsed time to add the data to the database is displayed in the ETL_create_database.ipynb file. (5 pt)
 
 *movies_query.PNG*
+
 ![movies_query](/movies_query.PNG)
 
 *ratings_query.PNG*
+
 ![ratings_query](/ratings_query.PNG)
