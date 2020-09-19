@@ -11,7 +11,7 @@ It is poor Git repository practice to upload raw datasets.  Instead of uploading
   
 # Deliverable 1:  Write an ETL function to read three data files
 
-![ETL_1function_test](/ETL_1function_test.ipynb)
+[ETL_1function_test](/ETL_1function_test.ipynb)
 
 
 # Deliverable 2: Extract and Transform the Wikipedia Data
